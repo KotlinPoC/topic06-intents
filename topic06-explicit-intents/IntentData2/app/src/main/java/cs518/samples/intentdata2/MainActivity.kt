@@ -29,10 +29,10 @@ class MainActivity : Activity() {
     }
 
     fun launchActivity2(view: View) {
-        val i = Intent(this, Activity2.kt)
+        val i = Intent(this, Activity2::class.java)
 
-        logIt(et.text.toString())
-        i.putExtra("DATA1", et.text.toString())
+        logIt(et?.text.toString())
+        i.putExtra("DATA1", et?.text.toString())
 
         // request code = 0, only one activity used
         startActivityForResult(i, 0)
@@ -58,28 +58,29 @@ class MainActivity : Activity() {
                 if (i != null && i.hasExtra("DATA2")) {
                     data = i.extras!!.getString("DATA2")
                     Log.d("DATA", data!!)
-                    if (data == null)
-                        tv3.setText(R.string.nodata)
+                    // in java this would be data == null
+                    if (data.isEmpty())
+                        tv3?.setText(R.string.nodata)
                     else
-                        tv3.text = data
+                        tv3?.text = data
                 } else {
-                    tv3.text = "No intent or no extras"
+                    tv3?.text = "No intent or no extras"
                 }
-                tv3.setTextColor(Color.MAGENTA)
+                tv3?.setTextColor(Color.MAGENTA)
             }
             Activity.RESULT_CANCELED -> {
                 logIt("result canceled")
-                tv3.text = "Cancel returned from child Activity"
-                tv3.setTextColor(Color.RED)
+                tv3?.text = "Cancel returned from child Activity"
+                tv3?.setTextColor(Color.RED)
             }
             else -> {
                 logIt("result canceled")
-                tv3.text = "Cancel returned from child Activity"
-                tv3.setTextColor(Color.RED)
+                tv3?.text = "Cancel returned from child Activity"
+                tv3?.setTextColor(Color.RED)
             }
         }
-        tv2.visibility = View.VISIBLE
-        tv3.visibility = View.VISIBLE
+        tv2?.visibility = View.VISIBLE
+        tv3?.visibility = View.VISIBLE
     } // onActivityResult()
 
     companion object {

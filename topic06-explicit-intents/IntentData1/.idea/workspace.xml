@@ -7,21 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8a1dffb-2fcd-45cf-a323-087f2a1df8fb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../ExplicitIntentsMultiActivity/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ExplicitIntentsMultiActivity/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData2/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IntentData2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IntentData2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IntentData3/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData3/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IntentData3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData3/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../topic06-respond-to-intents/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../topic06-respond-to-intents/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../topic06-respond-to-intents/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../topic06-respond-to-intents/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../topic06-respond-to-intents/app/src/main/java/ca/campbell/bestwebbrowser/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../topic06-respond-to-intents/app/src/main/java/ca/campbell/bestwebbrowser/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData2/app/src/main/java/cs518/samples/intentdata2/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData2/app/src/main/java/cs518/samples/intentdata2/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntentData3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntentData3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +70,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="8" />
+    <option name="y" value="31" />
     <option name="width" value="1280" />
     <option name="height" value="697" />
   </component>
@@ -87,6 +81,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -95,17 +91,10 @@
               <item name="IntentData1" type="b2602c69:ProjectViewProjectNode" />
               <item name="IntentData1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="IntentData1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntentData1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,10 +240,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="697" extended-state="0" />
-    <editor active="true" />
+    <frame x="8" y="31" width="1280" height="697" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584814" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2584814" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Captures" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -274,7 +262,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Build" order="11" visible="true" weight="0.33167496" />
+      <window_info active="true" anchor="bottom" id="Build" order="11" visible="true" weight="0.33167496" />
       <window_info anchor="bottom" id="Android Profiler" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

@@ -37,10 +37,10 @@ class MainActivity : Activity() {
      */
 
     fun launchActivity2(view: View) {
-        val i = Intent(this, Activity2::clas.java)
+        val i = Intent(this, Activity2::class.java)
 
-        logIt(et.text.toString())
-        i.putExtra("DATA1", et.text.toString())
+        logIt(et?.text.toString())
+        i.putExtra("DATA1", et?.text.toString())
 
         // request code = 0, only one activity used
         startActivityForResult(i, REQ_ACTIVITY2)
@@ -56,8 +56,8 @@ class MainActivity : Activity() {
     fun launchActivity3(view: View) {
         val i = Intent(this, Activity3::class.java)
 
-        logIt(et.text.toString())
-        i.putExtra("DATA1", et.text.toString())
+        logIt(et?.text.toString())
+        i.putExtra("DATA1", et?.text.toString())
 
         // request code = 0, only one activity used
         startActivityForResult(i, REQ_ACTIVITY3)
@@ -84,17 +84,17 @@ class MainActivity : Activity() {
             }
             Activity.RESULT_CANCELED -> {
                 logIt("result canceled")
-                tv3.text = "Cancel returned from child Activity"
-                tv3.setTextColor(Color.RED)
+                tv3?.text = "Cancel returned from child Activity"
+                tv3?.setTextColor(Color.RED)
             }
             else -> {
                 logIt("result canceled")
-                tv3.text = "Cancel returned from child Activity"
-                tv3.setTextColor(Color.RED)
+                tv3?.text = "Cancel returned from child Activity"
+                tv3?.setTextColor(Color.RED)
             }
         }
-        tv2.visibility = View.VISIBLE
-        tv3.visibility = View.VISIBLE
+        tv2?.visibility = View.VISIBLE
+        tv3?.visibility = View.VISIBLE
     } // onActivityResult()
 
     /**
@@ -109,35 +109,36 @@ class MainActivity : Activity() {
     internal fun setDataonUI(request: Int, i: Intent?) {
         val data: String?
         if (i == null) {
-            tv3.setText(R.string.missingIntent)
-            tv3.setTextColor(Color.RED)
+            tv3?.setText(R.string.missingIntent)
+            tv3?.setTextColor(Color.RED)
         } else {
             when (request) {
                 // Activity 2 returned
                 REQ_ACTIVITY2 -> if (i.hasExtra("DATA2")) {
                     data = i.extras!!.getString("DATA2")
                     Log.d("DATA", data!!)
-                    if (data == null)
-                        tv3.setText(R.string.nodata)
+                    //if (data == null)
+                    if (data.isEmpty())
+                        tv3?.setText(R.string.nodata)
                     else
-                        tv3.text = data
+                        tv3?.text = data
                 } else {
-                    tv3.setText(R.string.missingExtra)
+                    tv3?.setText(R.string.missingExtra)
                 }
                 // Activity 3 returned
                 REQ_ACTIVITY3 -> if (i.hasExtra("DATA3")) {
                     data = i.extras!!.getString("DATA3")
                     Log.d("DATA", data!!)
-                    if (data == null)
-                        tv3.setText(R.string.nodata)
+                    if (data.isEmpty())
+                        tv3?.setText(R.string.nodata)
                     else
-                        tv3.text = data
+                        tv3?.text = data
                 } else {
-                    tv3.setText(R.string.missingExtra)
+                    tv3?.setText(R.string.missingExtra)
                 }
                 else -> {
-                    tv3.setText(R.string.unknownReq)
-                    tv3.setTextColor(Color.MAGENTA)
+                    tv3?.setText(R.string.unknownReq)
+                    tv3?.setTextColor(Color.MAGENTA)
                 }
             }
         } // setDataonUI()
