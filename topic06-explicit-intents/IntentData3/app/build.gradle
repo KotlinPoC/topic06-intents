@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "28.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
 
     defaultConfig {
-        applicationId "cs518.samples.intentdata3"
-        minSdkVersion 17
-        targetSdkVersion 22
+        applicationId "cs518.samples.intentdata1"
+        minSdkVersion 22
+        targetSdkVersion 29
     }
 
     buildTypes {
@@ -16,4 +18,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

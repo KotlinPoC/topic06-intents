@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         var uri = intent.data
-        var webViewPackageInfo: PackageInfo? = null
+//        var webViewPackageInfo: PackageInfo? = null
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            webViewPackageInfo = WebView.getCurrentWebViewPackage()
-            Log.d(TAG, "WebView version: " + webViewPackageInfo!!.versionName)
+//            webViewPackageInfo = WebView.getCurrentWebViewPackage()
+            Log.d(TAG, "WebView version: " + WebView.getCurrentWebViewPackage()!!.versionName)
 
         }
 
