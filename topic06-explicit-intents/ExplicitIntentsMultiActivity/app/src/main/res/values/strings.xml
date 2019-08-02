@@ -8,6 +8,7 @@
     <string name="app_name6">Activity 6</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="no_data">no data received from invoking activity</string>
     <string name="title_activity_multi">MultiActivity</string>
 
 </resources>

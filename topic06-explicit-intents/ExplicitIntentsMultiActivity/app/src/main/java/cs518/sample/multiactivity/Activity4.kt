@@ -24,7 +24,7 @@ class Activity4 : Activity() {
             Activity1.logIt(value1)
             tv1.text = value1
         } else {
-            tv1.text = "no data received from invoking activity "
+            tv1.text = getString(R.string.no_data)
         }
 
     } // onCreate
@@ -55,7 +55,7 @@ class Activity4 : Activity() {
         // set up a new Intent
         val i = Intent()
         i.putExtra(Constants.KEY4, counter)
-        setResult(Activity.RESULT_OK, i)
+        setResult(RESULT_OK, i)
         super.finish()
     }
 } // class

@@ -9,16 +9,16 @@ import-summary.txt
 *.iws
 # gradle files
 .gradle
-/build/
+build/
 # Local config file (sdk path etc)
-/local.properties
+local.properties
 # Intellij IDEA (see https://intellij-support.jetbrains.com/entries/23393067)
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
 captures
 .externalNativeBuild
 
